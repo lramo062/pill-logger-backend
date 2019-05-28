@@ -55,22 +55,8 @@ fun Application.main() {
 //            }
 //        }
 
-        get("/") {
-            call.respondHtml {
-                head {
-                    title("Kotlin API example")
-                }
-                body {
-                    div {
-                        h1 {
-                            + "Welcome to the Persons API"
-                        }
-                        p {
-                            + "Go to '/person' to use the API"
-                        }
-                    }
-                }
-            }
+        post("/add-pill") {
+          println("connecting to the add pill site");
         }
     }
 }
